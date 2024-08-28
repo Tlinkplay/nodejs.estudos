@@ -31,7 +31,7 @@ readLine.question('Digite um numero:', (numero1) =>{
     const numeroValido1 = validarNumeroInformado(numero1);
     
     if(numeroValido1){
-        readLine.question('Favor informar outro numero:', (numero2) =>{  
+        readLine.question('Digite mais um numero:', (numero2) =>{  
             const numeroValido2 = validarNumeroInformado(numero2);
 
             if(numeroValido2){
