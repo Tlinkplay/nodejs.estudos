@@ -6,11 +6,11 @@ const readLine = require('readline').createInterface({
 });
 
 const validarNumeroInformado = (numero) =>{
-    try{
-        return Number.parseFloat(numero);
-    }catch(e){
+        const resultado = Number.parseFloat(numero);
+        if(!resultado){
         console.log('Este numero não e valido')
-    }
+        }
+        return resultado
 }
 
 const validarOperador = (operador) =>{
